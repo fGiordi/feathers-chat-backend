@@ -2,13 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "/app/lib/(.*)",
+      "src": "app/lib",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
-      "src": "/app/lib/(.*)",
+      "src": "/(.*)",
       "dest": "app.js"
     }
   ]
