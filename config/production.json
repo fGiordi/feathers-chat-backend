@@ -1,0 +1,38 @@
+{
+  "host": "feathers-chat-backend.vercel.app",
+  "port": 3030,
+  "public": "./public/",
+  "origins": [
+    "feathers-chat-backend.vercel.app"
+  ],
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "sqlite": {
+    "client": "sqlite3",
+    "connection": "test-app.sqlite",
+    "useNullAsDefault": true
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "OJ0svIuyOMvguf06Bo9DtACz/C9FrH+n",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "feathers-chat-backend.vercel.app",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
+}

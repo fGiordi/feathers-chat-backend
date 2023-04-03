@@ -3,7 +3,7 @@
     "__name": "PORT",
     "__format": "number"
   },
-  "host": "HOSTNAME",
+  "host": "feathers-chat-backend.vercel.app",
   "authentication": {
     "secret": "FEATHERS_SECRET"
   }
