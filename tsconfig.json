@@ -9,10 +9,14 @@
     "rootDir": "./src",
     "declaration": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+  }
   },
   "include": [
-    "src"
+    "./src/**/*"
   ],
   "exclude": [
     "test"
