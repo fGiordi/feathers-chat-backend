@@ -5,10 +5,6 @@ import { ApplicationConfiguration } from './configuration'
 
 import { User } from './services/users/users'
 
-import { User } from './services/users/users'
-
-import { User } from './services/users/users'
-
 export { NextFunction }
 
 // The types for app.get(name) and app.set(name)

@@ -10,12 +10,6 @@ export type { Message, MessageData, MessageQuery, MessagePatch } from './service
 import { userClient } from './services/users/users.shared'
 export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared'
 
-import { userClient } from './services/users/users.shared'
-export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared'
-
-import { userClient } from './services/users/users.shared'
-export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared'
-
 export interface Configuration {
   connection: TransportConnection<ServiceTypes>
 }
@@ -42,8 +36,6 @@ export const createClient = <Configuration = any>(
   client.configure(authenticationClient(authenticationOptions))
   client.set('connection', connection)
 
-  client.configure(userClient)
-  client.configure(userClient)
   client.configure(userClient)
   client.configure(messageClient)
   return client
