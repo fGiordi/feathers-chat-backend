@@ -23,8 +23,6 @@ const createClient = (connection, authenticationOptions = {}) => {
     client.configure((0, authentication_client_1.default)(authenticationOptions));
     client.set('connection', connection);
     client.configure(users_shared_1.userClient);
-    client.configure(users_shared_1.userClient);
-    client.configure(users_shared_1.userClient);
     client.configure(message_shared_1.messageClient);
     return client;
 };

@@ -4,10 +4,6 @@ import './services/message/message.shared';
 export type { Message, MessageData, MessageQuery, MessagePatch } from './services/message/message.shared';
 import './services/users/users.shared';
 export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared';
-import './services/users/users.shared';
-export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared';
-import './services/users/users.shared';
-export type { User, UserData, UserQuery, UserPatch } from './services/users/users.shared';
 export interface Configuration {
     connection: TransportConnection<ServiceTypes>;
 }
